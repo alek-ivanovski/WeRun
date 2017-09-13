@@ -1,0 +1,50 @@
+h3 {
+    color: #FFDA44;
+}
+
+a {
+    color: #555555;
+}
+
+.profile_picture {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+}
+
+.profile_name {
+    display: inline-block;
+    padding-left: 10px;
+}
+
+.date_time {
+    padding-top: 10px;
+}
+
+.description {
+    padding-top: 10px;
+}
+
+.comment {
+    padding-left: 10px;
+}
+
+.details {
+    background-color: #f8f8f8;
+}
+
+.profile-sm-picture {
+    width: 100%;
+    height: 100%;
+}
+
+.goals {
+    position: fixed;
+    padding: 5%;
+}
+
+.run {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 30px;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Dashboard</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
+
+    <!-- Fonts -->
+    <link href="fonts/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
+          type="text/css">
+
+    <!-- Custom CSS -->
+    <link href="css/template.css" rel="stylesheet">
+    <link href="css/dashboard.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+<!--Navigation Bar-->
+<nav class="navbar navbar-default" style="margin-bottom: 0">
+    <div class="container">
+
+        <!--Navbar Header-->
+        <div class="navbar-header page-scroll">
+            <!--Logo-->
+            <a class="brand" style="margin: 0; float: none;" href="#" ;>
+                <img alt="Brand" src="img/Logomakr_6KKwWi.png" class="logo">
+            </a>
+            <!--Hamburger button-->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-navbar-collapse"
+                    style="float: left">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+
+        <!--Navbar Content-->
+        <div class="collapse navbar-collapse" id="bs-navbar-collapse">
+            <ul class="nav navbar-nav navbar-left">
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="training.html">Training</a></li>
+                <li><a href="challenges.html">Challenges</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<!--Page Content-->
+<div class="container">
+
+    <!--Activity Feed-->
+    <div class="row">
+        <div class="col-xs-8">
+            <h3 class="page-header">
+                Activity Feed
+                <small>Running Overview</small>
+            </h3>
+
+            <!-- First Run -->
+            <div class="run">
+                <h4>
+                    Morning Run
+                </h4>
+
+                <img src="img/Conor-McGregor-1.png" class="profile_picture img-responsive img-circle">
+                <p class="profile_name">Conor McGregor</p>
+                <p class="date_time"><span class="glyphicon glyphicon-time"></span> August 28, 2017 at 09:00 AM</p>
+                <hr>
+                <img class="img-responsive" src="https://via.placeholder.com/900x300.gif" alt="">
+                <!--<hr>-->
+                <p class="description">10.0km 4.82/km</p>
+                <a class="btn btn-default details" href="#">Details <span
+                        class="glyphicon glyphicon-chevron-right"></span></a>
+
+                <hr>
+
+                <!-- Comment 1 -->
+                <div class="media">
+                    <div class="media-left media-top">
+                        <img src="img/AAEAAQAAAAkote.jpg" class="media-object profile_picture img-circle">
+                    </div>
+                    <div class="media-body">
+                        <h5 class="media-heading profile_name">Martin Kotevski</h5>
+                        <p class="comment">The best!</p>
+                    </div>
+                </div>
+
+                <!-- Comment 2 -->
+                <div class="media">
+                    <div class="media-left media-top">
+                        <img src="img/pipe.jpg" class="media-object profile_picture img-circle">
+                    </div>
+                    <div class="media-body">
+                        <h5 class="media-heading profile_name">Filip Simonovski</h5>
+                        <p class="comment">New Record!</p>
+                    </div>
+                </div>
+
+                <!--New Comment-->
+                <div class="row" style="padding-top: 10px">
+                    <div class="col-xs-1 col-xs-offset-1">
+                        <img src="img/alek.jpg" class="img-responsive img-circle profile-sm-picture">
+                    </div>
+                    <div class="col-xs-8">
+                        <input type="text" class="form-control" id="form1">
+                    </div>
+                    <div class="col-xs-2" style="padding: 0">
+                        <div class="btn btn-default add_comment1">Add Comment</div>
+                    </div>
+                </div>
+
+                <hr>
+            </div>
+
+            <!-- Second Run -->
+            <div class="run">
+                <h4>
+                    Afternoon Run
+                </h4>
+
+                <img src="img/Conor-McGregor-1.png" class="profile_picture img-responsive img-circle">
+                <p class="profile_name">Conor McGregor</p>
+                <p class="date_time"><span class="glyphicon glyphicon-time"></span> August 28, 2017 at 09:00 AM</p>
+                <hr>
+                <img class="img-responsive" src="https://via.placeholder.com/900x300.gif" alt="">
+                <!--<hr>-->
+                <p class="description">10.0km 4.82/km</p>
+                <a class="btn btn-default details" href="#">Details <span
+                        class="glyphicon glyphicon-chevron-right"></span></a>
+
+                <hr>
+
+                <!-- Comment 1 -->
+                <div class="media">
+                    <div class="media-left media-top">
+                        <img src="img/AAEAAQAAAAkote.jpg" class="media-object profile_picture img-circle">
+                    </div>
+                    <div class="media-body">
+                        <h5 class="media-heading profile_name">Martin Kotevski</h5>
+                        <p class="comment">The best!</p>
+                    </div>
+                </div>
+
+                <!-- Comment 2 -->
+                <div class="media">
+                    <div class="media-left media-top">
+                        <img src="img/pipe.jpg" class="media-object profile_picture img-circle">
+                    </div>
+                    <div class="media-body">
+                        <h5 class="media-heading profile_name">Filip Simonovski</h5>
+                        <p class="comment">New Record!</p>
+                    </div>
+                </div>
+
+                <!--New Comment-->
+                <div class="row" style="padding-top: 10px">
+                    <div class="col-xs-1 col-xs-offset-1">
+                        <img src="img/alek.jpg" class="img-responsive img-circle profile-sm-picture">
+                    </div>
+                    <div class="col-xs-8">
+                        <input type="text" class="form-control" id="form2">
+                    </div>
+                    <div class="col-xs-2" style="padding: 0">
+                        <div class="btn btn-default add_comment2">Add Comment</div>
+                    </div>
+                </div>
+
+                <hr>
+            </div>
+
+            <!-- Pager -->
+            <ul class="pager">
+                <li class="previous">
+                    <a href="#">&larr; Older</a>
+                </li>
+                <li class="next">
+                    <a href="#">Newer &rarr;</a>
+                </li>
+            </ul>
+        </div>
+
+        <!--Goals-->
+        <div class="col-xs-offset-6 col-xs-3" style="position: fixed; padding-left: 5%">
+            <h3 class="page-header">Goals</h3>
+
+            <!--This Week-->
+            <h5>This Week</h5>
+            <div class="progress">
+                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="82" aria-valuemin="0"
+                     aria-valuemax="100"
+                     style="width: 82%">
+                    41km of 50km
+                </div>
+            </div>
+
+            <!--This year-->
+            <h5>This Year</h5>
+            <div class="progress">
+                <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="58" aria-valuemin="0"
+                     aria-valuemax="100"
+                     style="width: 58%">
+                    1276km of 2200km
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div class="container-fluid footer">
+    <div class="container">
+        <div class="row">
+
+            <!--Logo and text-->
+            <div class="col-xs-4">
+                <!--<div class="row">-->
+                <div class="col-sm-offset-2 col-sm-8">
+                    <img src="img/logotint.png" class="img-responsive">
+                </div>
+                <!--</div>-->
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h5 class="text-center">
+                            <small>© 2017 WeRun, Inc. All rights reserved</small>
+                        </h5>
+                    </div>
+                </div>
+            </div>
+            <!--About-->
+            <div class="col-xs-offset-2 col-xs-2">
+                <ul class="list-unstyled">
+                    <li><strong>About</strong></li>
+                    <li><a href="about.html" class="footerli">About</a></li>
+                    <li><a href="features.html" class="footerli">Features</a></li>
+                    <li><a href="privacy.html" class="footerli">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <!--Features-->
+            <div class="col-xs-offset-2 col-xs-2">
+                <ul class="list-unstyled">
+                    <li><strong>Follow</strong></li>
+                    <li><a href="https://www.facebook.com" target="_blank" class="footerli">Facebook</a></li>
+                    <li><a href="https://www.instagram.com" target="_blank" class="footerli">Instagram</a></li>
+                    <li><a href="https://www.twitter.com" target="_blank" class="footerli">Twitter</a></li>
+                    <li><a href="https://www.youtube.com" target="_blank" class="footerli">Youtube</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- jQuery -->
+<script src="js/jquery.js"></script>
+
+<!--Custom jQuery-->
+<script src="js/dashboard.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>
