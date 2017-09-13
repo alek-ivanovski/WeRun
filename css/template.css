@@ -1,0 +1,26 @@
+.logo {
+    width: 80%
+}
+
+.nav {
+    margin-top: 2%;
+    font-size: 16px;
+}
+
+.navbar-header {
+    width: 20%;
+}
+
+.footerli {
+    color: #777777;
+}
+ul li {
+    margin-bottom:20px;
+}
+
+.footer {
+    padding-top: 5%;
+    background-color: #f8f8f8;
+    border-top: 1px solid #e7e7e7;
+}
+
