@@ -1,3 +1,7 @@
+body {
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
 .next-training h3 {
     color: grey;
 }
@@ -13,7 +17,7 @@
 
 #list-next-trainings li {
     padding: 5px;
-    /*border: 1px solid lightgray;*/
+    border: 1px solid lightgray;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -21,8 +25,23 @@ input[type="date"]
 input[type="number"],
 input[type="text"]{
     height: 40px;
+    margin-bottom: 10px;
 }
 
 #list-friends {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#list-friends .thumbnail {
+    border-radius: 50%;
+    background-color: #FFDA44;
+}
+
+#list-friends img {
+    border-radius: 50%;
+}
+
+.reputation {
+    margin-top: 20px;
+    color: cornflowerblue;
 }
