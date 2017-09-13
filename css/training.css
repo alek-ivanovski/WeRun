@@ -1,0 +1,18 @@
+.next-training h3 {
+    color: grey;
+}
+
+.next-training h4 {
+    color: cadetblue;
+}
+
+.next-training small {
+    font-style: italic;
+    color: cadetblue;
+}
+
+#list-next-trainings li {
+    padding: 5px;
+    /*border: 1px solid lightgray;*/
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
