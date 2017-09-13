@@ -16,3 +16,13 @@
     /*border: 1px solid lightgray;*/
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
+input[type="date"]
+input[type="number"],
+input[type="text"]{
+    height: 40px;
+}
+
+#list-friends {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
