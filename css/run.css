@@ -1,0 +1,11 @@
+.panel {
+    margin: 5%;
+}
+
+.c3-chart-texts {
+    font-size: 10px;
+    color: #333 !important;
+    fill: #333 !important;
+    text-align: center;
+    display: inline-block;
+}
