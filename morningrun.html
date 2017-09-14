@@ -22,6 +22,10 @@
     <!-- Custom CSS -->
     <link href="css/template.css" rel="stylesheet">
     <link href="css/dashboard.css" rel="stylesheet">
+    <link href="css/run.css" rel="stylesheet">
+
+    <!-- C3 Charts CSS -->
+    <link href="css/c3.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -66,148 +70,200 @@
 </nav>
 
 
-    <!-- Page Content -->
-    <div class="container">
+<!-- Page Content -->
+<div class="container">
 
+    <div class="row">
+
+        <!-- Blog Post Content Column -->
+        <div class="col-lg-8">
+
+            <!-- Blog Post -->
+
+            <!-- Title -->
+            <h3>
+                Morning Run
+            </h3>
+
+            <img src="img/Conor-McGregor-1.png" class="profile_picture img-responsive img-circle">
+            <p class="profile_name">Conor McGregor</p>
+            <p class="date_time"><span class="glyphicon glyphicon-time"></span> August 28, 2017 at 09:00 AM</p>
+            <hr>
+            <img class="img-responsive" src="img/conor_run.JPG" alt="">
+            <!--<hr>-->
+            <hr>
+
+            <!-- Post Content -->
+            <div class="row">
+                <div class="col-md-6">
+                    <h2 class="text-center">43:10</h2>
+                    <h2 class="text-center">
+                        <small>MOVING TIME</small>
+                    </h2>
+                </div>
+                <div class="col-md-6">
+                    <h2 class="text-center">10.0
+                        <small>km</small>
+                    </h2>
+                    <h2 class="text-center">
+                        <small>DISTANCE</small>
+                    </h2>
+                </div>
+            </div>
+            <div class="row" style="padding-top: 20px">
+                <div class="col-md-4">
+                    <h2 class="text-center">4:28
+                        <small>/km</small>
+                    </h2>
+                    <h2 class="text-center">
+                        <small>AVG PACE</small>
+                    </h2>
+                </div>
+                <div class="col-md-4">
+                    <h2 class="text-center">986
+                        <small>m</small>
+                    </h2>
+                    <h2 class="text-center">
+                        <small>ALTITUDE GAIN</small>
+                    </h2>
+                </div>
+                <div class="col-md-4">
+                    <h2 class="text-center">923</h2>
+                    <h2 class="text-center">
+                        <small>CALORIES</small>
+                    </h2>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- Comments -->
+
+            <!-- Comments Form -->
+            <div class="well">
+                <h4>Leave a Comment:</h4>
+                <form role="form">
+                    <div class="form-group">
+                        <textarea class="form-control" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Add Comment</button>
+                </form>
+            </div>
+
+            <hr>
+
+            <!-- Posted Comments -->
+
+            <!-- Comment -->
+            <div class="media">
+                <div class="media-left media-top">
+                    <img src="img/AAEAAQAAAAkote.jpg" class="media-object profile_picture img-circle">
+                </div>
+                <div class="media-body">
+                    <h5 class="media-heading profile_name">Martin Kotevski
+                        <small>August 28, 2017 at 12:34 AM</small>
+                    </h5>
+                    <p class="comment">The best!</p>
+                </div>
+            </div>
+
+            <!-- Comment -->
+            <div class="media">
+                <div class="media-left media-top">
+                    <img src="img/pipe.jpg" class="media-object profile_picture img-circle">
+                </div>
+                <div class="media-body">
+                    <h5 class="media-heading profile_name">Filip Simonovski
+                        <small>August 28, 2017 at 13:22 AM</small>
+                    </h5>
+                    <p class="comment">New Record!</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!--Charts-->
+        <!--Speed chart-->
+        <div class="col-md-4">
+            <div class="panel panel-default" style="height: 200px">
+                <div class="panel-heading">
+                    <h3 class="panel-title"><i class="fa fa-bar-chart-o fa-fw"></i>Speed</h3>
+                </div>
+                <div class="panel-body">
+                    <div id="speed-chart" style="height: 150px"></div>
+                </div>
+            </div>
+        </div>
+
+        <!--Elevation chart-->
+        <div class="col-md-4">
+            <div class="panel panel-default" style="height: 200px">
+                <div class="panel-heading">
+                    <h3 class="panel-title"><i class="fa fa-bar-chart-o fa-fw"></i>Elevation</h3>
+                </div>
+                <div class="panel-body">
+                    <div id="elev-chart" style="height: 150px"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="container-fluid footer">
+    <div class="container">
         <div class="row">
 
-            <!-- Blog Post Content Column -->
-            <div class="col-lg-8">
-
-                <!-- Blog Post -->
-
-                <!-- Title -->
-                <h4>
-                    Morning Run
-                </h4>
-
-                <img src="img/Conor-McGregor-1.png" class="profile_picture img-responsive img-circle">
-                <p class="profile_name">Conor McGregor</p>
-                <p class="date_time"><span class="glyphicon glyphicon-time"></span> August 28, 2017 at 09:00 AM</p>
-                <hr>
-                <img class="img-responsive" src="img/conor_run.JPG" alt="">
-                <!--<hr>-->
-                <hr>
-
-                <!-- Post Content -->
-                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, vero, obcaecati, aut,
-                    error quam sapiente nemo saepe quibusdam sit excepturi nam quia corporis eligendi eos magni
-                    recusandae laborum minus inventore?</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, tenetur natus doloremque laborum quos
-                    iste ipsum rerum obcaecati impedit odit illo dolorum ab tempora nihil dicta earum fugiat.
-                    Temporibus, voluptatibus.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, doloribus, dolorem iusto blanditiis
-                    unde eius illum consequuntur neque dicta incidunt ullam ea hic porro optio ratione repellat
-                    perspiciatis. Enim, iure!</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, nostrum, aliquid, animi, ut quas
-                    placeat totam sunt tempora commodi nihil ullam alias modi dicta saepe minima ab quo voluptatem
-                    obcaecati?</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, dolor quis. Sunt, ut, explicabo,
-                    aliquam tenetur ratione tempore quidem voluptates cupiditate voluptas illo saepe quaerat numquam
-                    recusandae? Qui, necessitatibus, est!</p>
-
-                <hr>
-
-                <!-- Blog Comments -->
-
-                <!-- Comments Form -->
-                <div class="well">
-                    <h4>Leave a Comment:</h4>
-                    <form role="form">
-                        <div class="form-group">
-                            <textarea class="form-control" rows="3"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Add Comment</button>
-                    </form>
+            <!--Logo and text-->
+            <div class="col-xs-4">
+                <!--<div class="row">-->
+                <div class="col-sm-offset-2 col-sm-8">
+                    <img src="img/logotint.png" class="img-responsive">
                 </div>
-
-                <hr>
-
-                <!-- Posted Comments -->
-
-                <!-- Comment -->
-                <div class="media">
-                    <a class="pull-left" href="#">
-                        <img class="media-object" src="img/64x64.gif" alt="">
-                    </a>
-                    <div class="media-body">
-                        <h4 class="media-heading">FINKI
-                            <small>August 25, 2014 at 9:30 PM</small>
-                        </h4>
-                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin
-                        commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum
-                        nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                <!--</div>-->
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h5 class="text-center">
+                            <small>© 2017 WeRun, Inc. All rights reserved</small>
+                        </h5>
                     </div>
                 </div>
-
-                <!-- Comment -->
-                <div class="media">
-                    <a class="pull-left" href="#">
-                        <img class="media-object" src="img/64x64.gif" alt="">
-                    </a>
-                    <div class="media-body">
-                        <h4 class="media-heading">FINKI
-                            <small>August 25, 2014 at 9:30 PM</small>
-                        </h4>
-                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin
-                        commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum
-                        nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-                    </div>
-                </div>
-
+            </div>
+            <!--About-->
+            <div class="col-xs-offset-2 col-xs-2">
+                <ul class="list-unstyled">
+                    <li><strong>About</strong></li>
+                    <li><a href="about.html" class="footerli">About</a></li>
+                    <li><a href="features.html" class="footerli">Features</a></li>
+                    <li><a href="privacy.html" class="footerli">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <!--Features-->
+            <div class="col-xs-offset-2 col-xs-2">
+                <ul class="list-unstyled">
+                    <li><strong>Follow</strong></li>
+                    <li><a href="https://www.facebook.com" target="_blank" class="footerli">Facebook</a></li>
+                    <li><a href="https://www.instagram.com" target="_blank" class="footerli">Instagram</a></li>
+                    <li><a href="https://www.twitter.com" target="_blank" class="footerli">Twitter</a></li>
+                    <li><a href="https://www.youtube.com" target="_blank" class="footerli">Youtube</a></li>
+                </ul>
             </div>
 
         </div>
     </div>
+</div>
 
-    <div class="container-fluid footer">
-        <div class="container">
-            <div class="row">
+<!-- jQuery -->
+<script src="js/jquery.js"></script>
 
-                <!--Logo and text-->
-                <div class="col-xs-4">
-                    <!--<div class="row">-->
-                    <div class="col-sm-offset-2 col-sm-8">
-                        <img src="img/logotint.png" class="img-responsive">
-                    </div>
-                    <!--</div>-->
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <h5 class="text-center">
-                                <small>© 2017 WeRun, Inc. All rights reserved</small>
-                            </h5>
-                        </div>
-                    </div>
-                </div>
-                <!--About-->
-                <div class="col-xs-offset-2 col-xs-2">
-                    <ul class="list-unstyled">
-                        <li><strong>About</strong></li>
-                        <li><a href="about.html" class="footerli">About</a></li>
-                        <li><a href="features.html" class="footerli">Features</a></li>
-                        <li><a href="privacy.html" class="footerli">Privacy Policy</a></li>
-                    </ul>
-                </div>
-                <!--Features-->
-                <div class="col-xs-offset-2 col-xs-2">
-                    <ul class="list-unstyled">
-                        <li><strong>Follow</strong></li>
-                        <li><a href="https://www.facebook.com" target="_blank" class="footerli">Facebook</a></li>
-                        <li><a href="https://www.instagram.com" target="_blank" class="footerli">Instagram</a></li>
-                        <li><a href="https://www.twitter.com" target="_blank" class="footerli">Twitter</a></li>
-                        <li><a href="https://www.youtube.com" target="_blank" class="footerli">Youtube</a></li>
-                    </ul>
-                </div>
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
 
-            </div>
-        </div>
-    </div>
+<!-- C3 Charts JavaScript -->
+<script src="js/d3.min.js"></script>
+<script src="js/c3.min.js"></script>
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-
+<!-- Custom JavaScript -->
+<script src="js/morningrun.js"></script>
 </body>
 </html>
