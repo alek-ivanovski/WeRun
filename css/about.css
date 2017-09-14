@@ -1,0 +1,11 @@
+.paragraph-text{
+    font-size:17px;
+}
+.fix-margin{
+    margin:20px;
+}
+.person-div:hover{
+    background-color: lightgray;
+    /*#FF3445*/
+    border-radius: 50px;
+}
