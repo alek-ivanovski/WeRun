@@ -55,9 +55,10 @@ $(document).ready(function(){
 
     $('#add_comment').click(function(){
         var comment = $('#comment_value').val();
-        alert(comment);
+        //alert(comment);
+        //alert("here");
         if (comment != ""){
-            alert("Vlaga vo if");
+            //alert("Vlaga vo if");
             $('#append-here').append("<div class='media'>"+
                 "<div class='media-left media-top'>"+
                 "<img src='img/alek.jpg' class='media-object profile_picture img-circle'>"+
@@ -70,6 +71,7 @@ $(document).ready(function(){
             $('#comment_value').val("");
         }
     });
+
 
     //donutChart = c3.generate({
     //    bindto: '#donut-chart',
@@ -89,3 +91,5 @@ $(document).ready(function(){
     //    }
     //});
 });
+
+
