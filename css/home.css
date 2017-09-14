@@ -1,0 +1,91 @@
+body {
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.carousel-holder {
+    margin-bottom: 30px;
+}
+
+.carousel-holder img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.carousel-content {
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    z-index: 20;
+    color: white;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+    font-size: 4em;
+    font-weight: bold;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    opacity: 0.8;
+}
+
+.service {
+    padding: 30px;
+    border-radius: 3px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 350px;
+    margin-bottom: 20px;
+}
+
+.service img {
+    width: 60%; display: block; margin: 0 auto;
+}
+
+.service h4 {
+    font-weight: bold;
+    color: #FFDA44;
+}
+
+.service-desc {
+    font-style: italic;
+    color: gray;
+}
+
+#services a:hover {
+    text-decoration: none;
+}
+
+#services {
+    margin-bottom: 50px;
+}
+
+.service:hover {
+    box-shadow: 3px 3px 5px 6px #ccc;
+}
+
+@media (min-width:320px)  { /* smartphones, iPhone, portrait 480x320 phones */
+    .carousel-content {
+        font-size: 12px;
+    }
+}
+@media (min-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+    .carousel-content {
+        font-size: 1.5em;
+    }
+}
+@media (min-width:641px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+    .carousel-content {
+        font-size: 2em;
+    }
+}
+@media (min-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */
+    .carousel-content {
+        font-size: 2.5em;
+    }
+}
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */
+    .carousel-content {
+        font-size: 3em;
+    }
+}
+@media (min-width:1281px) { /* hi-res laptops and desktops */
+    .carousel-content {
+        font-size: 4em;
+    }
+}
