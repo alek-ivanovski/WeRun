@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Afternoon run</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
+
+    <!-- Fonts -->
+    <link href="fonts/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
+          type="text/css">
+
+    <!-- Custom CSS -->
+    <link href="css/template.css" rel="stylesheet">
+    <link href="css/dashboard.css" rel="stylesheet">
+    <link href="css/run.css" rel="stylesheet">
+
+    <!-- C3 Charts CSS -->
+    <link href="css/c3.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+<!--Navigation Bar-->
+<nav class="navbar navbar-default" style="margin-bottom: 0">
+    <div class="container">
+
+        <!--Navbar Header-->
+        <div class="navbar-header page-scroll">
+            <!--Logo-->
+            <a class="brand" style="margin: 0; float: none;" href="#" ;>
+                <img alt="Brand" src="img/Logomakr_6KKwWi.png" class="logo">
+            </a>
+            <!--Hamburger button-->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-navbar-collapse"
+                    style="float: left">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+
+        <!--Navbar Content-->
+        <div class="collapse navbar-collapse" id="bs-navbar-collapse">
+            <ul class="nav navbar-nav navbar-left">
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="training.html">Training</a></li>
+                <li><a href="challenges.html">Challenges</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<!-- Page Content -->
+<div class="container">
+
+    <div class="row">
+
+        <!-- Blog Post Content Column -->
+        <div class="col-lg-8">
+
+            <!-- Blog Post -->
+
+            <!-- Title -->
+            <h3>
+                Afternoon Run
+            </h3>
+
+            <img src="img/pipe.jpg" class="profile_picture img-responsive img-circle">
+            <p class="profile_name">Filip Simonovski</p>
+            <p class="date_time"><span class="glyphicon glyphicon-time"></span>  August 25, 2017 at 13:23 AM</p>
+            <hr>
+            <img class="img-responsive" src="img/pipe_run.JPG" alt="">
+            <!--<hr>-->
+            <hr>
+
+            <!-- Post Content -->
+            <div class="row">
+                <div class="col-md-6">
+                    <h2 class="text-center">40:12</h2>
+                    <h2 class="text-center">
+                        <small>MOVING TIME</small>
+                    </h2>
+                </div>
+                <div class="col-md-6">
+                    <h2 class="text-center">10.1
+                        <small>km</small>
+                    </h2>
+                    <h2 class="text-center">
+                        <small>DISTANCE</small>
+                    </h2>
+                </div>
+            </div>
+            <div class="row" style="padding-top: 20px">
+                <div class="col-md-4">
+                    <h2 class="text-center">3:50
+                        <small>/km</small>
+                    </h2>
+                    <h2 class="text-center">
+                        <small>AVG PACE</small>
+                    </h2>
+                </div>
+                <div class="col-md-4">
+                    <h2 class="text-center">20
+                        <small>m</small>
+                    </h2>
+                    <h2 class="text-center">
+                        <small>ALTITUDE GAIN</small>
+                    </h2>
+                </div>
+                <div class="col-md-4">
+                    <h2 class="text-center">764</h2>
+                    <h2 class="text-center">
+                        <small>CALORIES</small>
+                    </h2>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- Comments -->
+
+            <!-- Comments Form -->
+            <div class="well">
+                <h4>Leave a Comment:</h4>
+                <form role="form">
+                    <div class="form-group">
+                        <textarea class="form-control" id="comment_value" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" id="add_comment">Add Comment</button>
+                </form>
+            </div>
+
+            <hr>
+
+            <!-- Posted Comments -->
+
+            <!-- Comment -->
+            <div class="media">
+                <div class="media-left media-top">
+                    <img src="img/AAEAAQAAAAkote.jpg" class="media-object profile_picture img-circle">
+                </div>
+                <div class="media-body">
+                    <h5 class="media-heading profile_name">Martin Kotevski
+                        <small>August 25, 2017 at 14:15 AM</small>
+                    </h5>
+                    <p class="comment">Good Job!</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!--Charts-->
+        <!--Speed chart-->
+        <div class="col-md-4">
+            <div class="panel panel-default" style="height: 200px">
+                <div class="panel-heading">
+                    <h3 class="panel-title"><i class="fa fa-bar-chart-o fa-fw"></i>Speed</h3>
+                </div>
+                <div class="panel-body">
+                    <div id="speed-chart" style="height: 150px"></div>
+                </div>
+            </div>
+        </div>
+
+        <!--Elevation chart-->
+        <div class="col-md-4">
+            <div class="panel panel-default" style="height: 200px">
+                <div class="panel-heading">
+                    <h3 class="panel-title"><i class="fa fa-bar-chart-o fa-fw"></i>Elevation</h3>
+                </div>
+                <div class="panel-body">
+                    <div id="elev-chart" style="height: 150px"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="container-fluid footer">
+    <div class="container">
+        <div class="row">
+
+            <!--Logo and text-->
+            <div class="col-xs-4">
+                <!--<div class="row">-->
+                <div class="col-sm-offset-2 col-sm-8">
+                    <img src="img/logotint.png" class="img-responsive">
+                </div>
+                <!--</div>-->
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h5 class="text-center">
+                            <small>© 2017 WeRun, Inc. All rights reserved</small>
+                        </h5>
+                    </div>
+                </div>
+            </div>
+            <!--About-->
+            <div class="col-xs-offset-2 col-xs-2">
+                <ul class="list-unstyled">
+                    <li><strong>About</strong></li>
+                    <li><a href="about.html" class="footerli">About</a></li>
+                    <li><a href="features.html" class="footerli">Features</a></li>
+                    <li><a href="privacy.html" class="footerli">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <!--Features-->
+            <div class="col-xs-offset-2 col-xs-2">
+                <ul class="list-unstyled">
+                    <li><strong>Follow</strong></li>
+                    <li><a href="https://www.facebook.com" target="_blank" class="footerli">Facebook</a></li>
+                    <li><a href="https://www.instagram.com" target="_blank" class="footerli">Instagram</a></li>
+                    <li><a href="https://www.twitter.com" target="_blank" class="footerli">Twitter</a></li>
+                    <li><a href="https://www.youtube.com" target="_blank" class="footerli">Youtube</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- jQuery -->
+<script src="js/jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+
+<!-- C3 Charts JavaScript -->
+<script src="js/d3.min.js"></script>
+<script src="js/c3.min.js"></script>
+
+<!-- Custom JavaScript -->
+<script src="js/afternoonrun.js"></script>
+</body>
+</html>
