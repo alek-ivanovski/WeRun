@@ -11,7 +11,7 @@ $(function(){
         //create new challenge
         var challengeName = $("#chName").val();
         var challengeDistanceInMeters = $("#chDistance").val();
-        var hours = Number($("#chHour").val()) / 1000;
+        var hours = $("#chHour").val();
         var min = $("#chMinutes").val();
         var sec = $("#chSeconds").val();
         var randomNumber = Math.floor((Math.random() * 100) + 1);
@@ -25,15 +25,33 @@ $(function(){
             progressColor = "progress-bar-success";
         }
         var timeInSeconds = (Number(hours) * 3600) + (Number(min) * 60) + Number(sec);
+        var timeInMinutes = timeInSeconds / 60;
+        var timeInHours = timeInMinutes / 60.0;
+        //timeInHours = Math.round(timeInHours * 100) / 100;
         var distanceInKm = Number(challengeDistanceInMeters / 1000);
-        var kilometersPerHour = (distanceInKm * 1000) / (timeInSeconds * 3600);
-        var pace  = distanceInKm * timeInSeconds;
+        var kilometersPerHour = distanceInKm / timeInHours;
+        var pace  = timeInMinutes  / distanceInKm;
 
-        alert("Time:" + hours + ":" + min + ":" + sec  + " In sec:" + timeInSeconds + " km/h:" + kilometersPerHour + " Pace:" + pace);
+        var floatingPointDigits = (pace * 100) % 100;
+        floatingPointDigits = floatingPointDigits * 0.6;
+
+        //works for pace under 10.0
+        //var firstDigit = Number(String(pace).charAt(0));
+        //pace = firstDigit + ((floatingPointDigits * 100) / 10000);
+
+        var firstDigits = Math.floor(pace);
+        pace = firstDigits + ((floatingPointDigits * 100) / 10000);
+
+        //two deciamals round
+        kilometersPerHour = Math.round(kilometersPerHour * 100) / 100;
+        pace = Math.round(pace * 100) / 100;
+        //timeInHours = Math.round(timeInHours * 100) / 100;
+
+        //alert("Time:" + hours + ":" + min + ":" + sec  + "\nIn sec / min:" + timeInSeconds + "/" + timeInMinutes + "\nSpeed:" + kilometersPerHour + "km/h" + "\nPace:" + pace +  "min/km");
 
         //alert("Name:"+ challengeName + " Kilometers:" + challengeDistance + "Time:" + hours + ":" + min + ":" + sec);
         if(checkValidation(challengeName, challengeDistanceInMeters, hours, min, sec) == true){
-            var panel = '<div class="col-sm-4"><div class="panel panel-default"><div class="panel-body"><h4>' + challengeName + '</h4></div><div class="panel-footer"><span>Kilometers:<span id="km">' + distanceInKm + ' </span></span><br><span>Time - <span id="time">' + "Hours:" + hours + " Minutes:" + min + " Seconds:" + sec + '</span></span><br><br><div class="progress"><div class="progress-bar ' + progressColor + '" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:' + randomNumber + '%">'+ randomNumber + '%</div></div></div></div>';
+            var panel = '<div class="col-sm-4"><div class="panel panel-default"><div class="panel-body"><h4>' + challengeName + '</h4></div><div class="panel-footer"><span>Distance:<span id="km">' + distanceInKm + ' km </span></span><br><span>Speed: <span>' + kilometersPerHour + ' km/h</span></span><br><span>Pace: <span>' + pace + ' min/km</span></span><br><span>Time - <span id="time">' + "Hours:" + hours + " Minutes:" + min + " Seconds:" + sec + '</span></span><br><br><div class="progress"><div class="progress-bar ' + progressColor + '" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:' + randomNumber + '%">'+ randomNumber + '%</div></div></div></div>';
             $("#challenges").append(panel);
             $("#validationAlert").hide();
             $("#close").click();
@@ -46,7 +64,7 @@ $(function(){
     });
 
     function checkValidation(name, dist, hours, min, sec){
-        if(name != "" && dist != "" && hours != "" && min != "" && sec != "" && Number(sec) < 60 && Number(min) < 60 ){
+        if(name != "" && dist != "" && hours != "" && min != "" && sec != "" ){
             return true
         }else{
             return false;
